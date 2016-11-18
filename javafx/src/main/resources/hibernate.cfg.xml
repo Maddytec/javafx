@@ -6,7 +6,7 @@
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://"URL do seu banco":3306/"Nome do Banco"?useTimezone=true&amp;serverTimezone=UTC</property>
 		<property name="hibernate.connection.username">javafx</property>
-		<property name="hibernate.connection.password">"Digite sua senha"</property> 
+		<property name="hibernate.connection.password">"Digite sua Senha"</property> 
 		
 		<!-- Enable Hibernate's automatic session context management -->
 		<property name="current_session_context_class">thread</property> 
