@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory> <!-- Database connection settings --> <!-- SQL dialect -->
+		<property name="hibernate.connection.driver_class">org.gjt.mm.mysql.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://"URL do seu banco":3306/"Nome do Banco"?useTimezone=true&amp;serverTimezone=UTC</property>
+		<property name="hibernate.connection.username">javafx</property>
+		<property name="hibernate.connection.password">"Digite sua Senha"</property> 
+		
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property> 
+		
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> 
+		
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show-sql">true</property> 
+		
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2dll.auto">update</property> 
+		
+		<!-- Mapeamento das entidades -->
+		<mapping class="model.Pessoa" />
+		
+	</session-factory>
+</hibernate-configuration>

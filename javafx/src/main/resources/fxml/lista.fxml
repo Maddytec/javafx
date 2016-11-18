@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="389.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaController">
+   <children>
+      <Label fx:id="lblTitulo" layoutX="136.0" layoutY="15.0" text="Pessoas Cadastradas" />
+      <TableView fx:id="tvTabela" layoutX="24.0" layoutY="50.0" prefHeight="251.0" prefWidth="333.0">
+        <columns>
+          <TableColumn fx:id="tcNome" prefWidth="258.0" text="Nome" />
+          <TableColumn fx:id="tcIdade" prefWidth="74.0" text="Idade" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSair" layoutX="322.0" layoutY="345.0" mnemonicParsing="false" onAction="#sair" text="Sair" />
+      <Button fx:id="btnEditar" layoutX="24.0" layoutY="345.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+      <Button fx:id="btnExcluir" layoutX="79.0" layoutY="345.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+      <TextField fx:id="tfNome" layoutX="63.0" layoutY="306.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="tfIdade" layoutX="322.0" layoutY="306.0" prefHeight="25.0" prefWidth="36.0" />
+      <Label fx:id="lblNome" layoutX="24.0" layoutY="310.0" text="Nome" />
+      <Label fx:id="lblIdade" layoutX="286.0" layoutY="310.0" text="Idade" />
+   </children>
+</AnchorPane>
